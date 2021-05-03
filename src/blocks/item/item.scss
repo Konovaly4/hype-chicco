@@ -1,0 +1,38 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+
+.item {
+  &-number {
+    display: block;
+    min-width: 49px;
+    min-height: 49px;
+    border-radius: 50%;
+    background-color: colors.$marks-blue;
+    color: colors.$txt-blue;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  &-text {
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: colors.$txt-black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    &-number {
+      min-width: 54px;
+      height: 54px;
+      line-height: 55px;
+    }
+  }
+}
