@@ -3,6 +3,8 @@
 @use './main/main.scss';
 @use './choise/choise.scss';
 @use './questions/questions.scss';
+@use './two-pic-advise/two-pic-advise.scss';
+@use './one-pic-advise/one-pic-advise.scss';
 
 .root {
   display: flex;

@@ -83,7 +83,7 @@
       <div class="main__list-bg"></div>
       <div class="main__bottom-bg"></div>
     </section>
-    <section class="choise">
+    <section class="choise choise_model">
       <img src="<%=require('./images/common/choise/pram-icon.svg')%>" alt="pram-icon" class="choise__pram-icon">
       <div class="choise__text-container">
         <h1 class="choise__title">
@@ -144,6 +144,97 @@
       </div>
       <a href="" class="questions__button">Посмотреть все модели</a>
     </section>
+    <section class="advise two-pic-advise">
+      <div class="advise__content">
+        <h1 class="advise__title two-pic-advise__title">
+          Если вы без ума от активного образа жизни и часто путешествуете, то присмотритесь к прогулочной коляске
+        </h1>
+        <p class="advise__description two-pic-advise__description">
+          Например, прогулочная коляска <a href="" class="advise__inline-link">TrolleyMe</a> быстро складывается и легко трансформируется
+          в тележку, а модель <a href="" class="advise__inline-link">Goody</a> настолько компактная, что вы можете взять
+          её в самолет в качестве ручной клади (на всякий случай проверьте требования авиакомпании).
+        </p>
+        <div class="advise__picture-container two-pic-advise__picture-container">
+          <div class="advise__picture-item two-pic-advise__picture-item">
+            <a href="" class="advise__picture-link">
+              <img src="<%=require('./images/common/travel-pram/trolley-me-pic.jpg')%>" alt="trolley-me" class="advise__picture">
+            </a>
+            <a href="" class="advise__link">TrolleyMe</a>
+            <p class="advise__link-description">
+              идеальный компаньон для прогулок и путешествий
+            </p>
+          </div>
+          <div class="advise__picture-item two-pic-advise__picture-item">
+            <a href="" class="advise__picture-link">
+              <img src="<%=require('./images/common/travel-pram/goody-pic.jpg')%>" alt="" class="advise__picture">
+            </a>
+            <a href="" class="advise__link">Goody</a>
+            <p class="advise__link-description">
+              складывается автоматически всего одним нажатием кнопки
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advise one-pic-advise">
+      <div class="advise__content">
+        <h1 class="advise__title one-pic-advise__title">
+          Если вы живете за городом и у вас есть машина, то обратите внимание на коляски 2-в-1 и 3-в-1
+        </h1>
+        <p class="advise__description one-pic-advise__description">
+          Например, модульная система <a href="" class="advise__inline-link">Trio Activ3</a> Top дополнена автокреслом, которое 
+          можно установить на шасси коляски. Вам не придется ничего приобретать дополнительно.
+        </p>
+        <div class="advise__picture-container one-pic-advise__picture-container">
+          <div class="advise__picture-item one-pic-advise__picture-item">
+            <a href="" class="advise__picture-link">
+              <img src="<%=require('./images/common/suburban-pram/trio-activ3.jpg')%>" alt="trolley-me" class="advise__picture">
+            </a>
+            <a href="" class="advise__link">Trio Activ3 Top</a>
+            <p class="advise__link-description">
+              отличный выбор для спортивных и динамичных родителей
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advise one-pic-advise">
+      <div class="advise__content">
+        <h1 class="advise__title one-pic-advise__title">
+          Если у вас двойня или дети-погодки, то имеет смысл приобрести коляску-тандем
+        </h1>
+        <p class="advise__description one-pic-advise__description">
+          Например, <a href="" class="advise__inline-link">OHlala Twin</a>. Обе спинки коляски регулируются независимо друг от друга, 
+          а благодаря современной системе складывания она занимает мало места.
+        </p>
+        <div class="advise__picture-container one-pic-advise__picture-container">
+          <div class="advise__picture-item one-pic-advise__picture-item">
+            <a href="" class="advise__picture-link">
+              <img src="<%=require('./images/common/twins-pram/OHlala Twin.jpg')%>" alt="trolley-me" class="advise__picture">
+            </a>
+            <a href="" class="advise__link">OHlala Twin</a>
+            <p class="advise__link-description">
+              ультралегкая и компактная коляска-тандем от Chicco
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="choise choise_dimension">
+    <img src="<%=require('./images/common/choise/dimension-icon.svg')%>" alt="pram-icon" class="choise__pram-icon">
+    <div class="choise__text-container">
+      <h1 class="choise__title">
+        Габариты коляски в сложенном и разложенном виде
+      </h1>
+      <p class="choise__description">
+        При выборе детской коляски многие мамы не обращают внимание на ее вес, 
+        но чтобы избежать проблем и дискомфорта, лучше учесть этот момент заранее. 
+        Подумайте: какой вес коляски вы реально сможете поднять? Прибавьте к этому вес ребенка, 
+        аксессуаров и своих личных вещей.
+      </p>
+    </div>
+  </section>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

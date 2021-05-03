@@ -8,10 +8,18 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  &_model {
+    margin: 65px 0 80px;
+  }
+
+  &_dimension {
+    margin: 0 0 80px;
+  }
+
   &__pram-icon {
     width: 47px;
     height: 50px;
-    margin: 67px 0 30px;
+    margin: 0 0 30px;
   }
 
   &__text-container {
@@ -47,7 +55,7 @@
   }
 
   &__description {
-    margin: 0 0 80px;
+    margin: 0;
     width: 100%;
     font-family: fonts.$base-font;
     font-style: normal;
@@ -64,6 +72,10 @@
     max-width: 1200px;
     flex-direction: row;
 
+    &_model {
+      margin: 65px 0 100px;
+    }
+
     &__pram-icon {
       margin: 0 55px 0 0;
     }
@@ -79,10 +91,6 @@
       margin: 0 0 30px;
       max-width: unset;
       font-size: 28px;
-    }
-
-    &__description {
-      margin: 0 0 100px;
     }
   }
 }
