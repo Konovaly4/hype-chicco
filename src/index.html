@@ -12,8 +12,8 @@
     <section class="header">
       <div class="header__content">
         <picture>
-          <source media="(max-width: 768px)" srcset="<%=require('./images/mobile/header/hype-logo.svg')%>">
-          <source media="(min-width: 769px)" srcset="<%=require('./images/desktop/header/hype-logo.svg')%>">
+          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/header/hype-logo.svg')%>">
+          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/header/hype-logo.svg')%>">
           <img src="<%=require('./images/mobile/header/hype-logo.svg')%>" alt="hype-logo" class="header__hype-logo">
         </picture>
         <nav class="header__nav-menu header__nav-menu_open">
@@ -30,8 +30,8 @@
           </ul>
         </nav>
         <picture>
-          <source media="(max-width: 768px)" srcset="<%=require('./images/mobile/header/chicco-logo.svg')%>">
-          <source media="(min-width: 769px)" srcset="<%=require('./images/desktop/header/chicco-logo.svg')%>">
+          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/header/chicco-logo.svg')%>">
+          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/header/chicco-logo.svg')%>">
           <img src="<%=require('./images/mobile/header/chicco-logo.svg')%>" alt="hype-logo" class="header__chicco-logo">
         </picture>
         <div class="header__menu-open header__menu-open_show"></div>
@@ -69,9 +69,17 @@
           <p class="main__list-text">Чек-лист по выбору детской коляски</p>
         </li>
       </ul>
-      <img src="<%=require('./images/mobile/main/main-bg.svg')%>" alt="city" class="main__city">
+      <picture class="main__city">
+        <source media="(max-width: 1023px)" srcset="<%=require('./images/mobile/main/main-bg.svg')%>">
+        <source media="(min-width: 1024px)" srcset="<%=require('./images/desktop/main/main-bg.svg')%>">
+        <img src="<%=require('./images/mobile/main/main-bg.svg')%>" alt="city">
+      </picture>
       <img src="<%=require('./images/common/main/mom.svg')%>" alt="mom" class="main__mom">
-      <img src="<%=require('./images/mobile/main/pram.svg')%>" alt="pram" class="main__pram">
+      <picture class="main__pram">
+        <source media="(max-width: 1023px)" srcset="<%=require('./images/mobile/main/pram.svg')%>">
+        <source media="(min-width: 1024px)" srcset="<%=require('./images/desktop/main/pram.svg')%>">
+        <img src="<%=require('./images/mobile/main/pram.svg')%>" alt="pram">
+      </picture>
       <div class="main__list-bg"></div>
       <div class="main__bottom-bg"></div>
     </section>
