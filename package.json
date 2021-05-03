@@ -30,14 +30,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Konovaly4/hype.git"
+    "url": "git+https://github.com/Konovaly4/hype-chicco.git"
   },
   "author": "konovaly4",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Konovaly4/hype/issues"
+    "url": "https://github.com/Konovaly4/hype-chicco/issues"
   },
-  "homepage": "https://github.com/Konovaly4/hype",
+  "homepage": "https://github.com/Konovaly4/hype-chicco",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.13",

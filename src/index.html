@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hype-Chicco</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+  <div class="root">
+    <section class="header">
+      <div class="header__content">
+        <picture>
+          <source media="(max-width: 768px)" srcset="<%=require('./images/mobile/header/hype-logo.svg')%>">
+          <source media="(min-width: 769px)" srcset="<%=require('./images/desktop/header/hype-logo.svg')%>">
+          <img src="<%=require('./images/mobile/header/hype-logo.svg')%>" alt="hype-logo" class="header__hype-logo">
+        </picture>
+        <nav class="header__nav-menu header__nav-menu_open">
+          <ul class="header__nav-links">
+            <li class="header__nav-links-item">
+              <a href="" class="header__nav-link">Как выбрать коляску</a>
+            </li>
+            <li class="header__nav-links-item">
+              <a href="" class="header__nav-link">Тест</a>
+            </li>
+            <li class="header__nav-links-item">
+              <a href="" class="header__nav-link">Чек-лист</a>
+            </li>
+          </ul>
+        </nav>
+        <picture>
+          <source media="(max-width: 768px)" srcset="<%=require('./images/mobile/header/chicco-logo.svg')%>">
+          <source media="(min-width: 769px)" srcset="<%=require('./images/desktop/header/chicco-logo.svg')%>">
+          <img src="<%=require('./images/mobile/header/chicco-logo.svg')%>" alt="hype-logo" class="header__chicco-logo">
+        </picture>
+        <div class="header__menu-open header__menu-open_show"></div>
+        <div class="header__menu-close header__menu-close_show"></div>
+      </div>
+    </section>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>
