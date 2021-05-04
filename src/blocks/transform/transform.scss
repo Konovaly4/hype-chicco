@@ -1,0 +1,257 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+@use '../item/item.scss';
+
+.transform {
+  width: 100%;
+  margin: 0 0 80px;
+  padding: 54px 0 51px;
+  background-color: colors.$bg-white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0 0 50px;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    color: colors.$txt-black;
+  }
+
+  &__list {
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: 100%;
+    margin: 0 0 50px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__list-title {
+    width: 100%;
+    margin: 0 0 31px;
+    height: 31px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item-number {
+    width: 31px;
+    height: 31px;
+    margin: 0 20px 0 0;
+  }
+
+  &__item-text {
+    margin: 0;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    color: colors.$txt-black;
+  }
+
+  &__item-desctiption {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: colors.$txt-black;
+  }
+
+  &__description {
+    margin: 0 0 70px;
+    padding: 0;
+    width: 100%;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: colors.$txt-black;
+  }
+
+  &__image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-item {
+    width: 100%;
+    max-width: 394px;
+    height: 640px;
+    margin: 0 0 30px;
+    padding: 30px 0;
+    border: 1px solid colors.$border-gray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__image-link {
+    margin: 0 0 0 30px;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    color: colors.$txt-brick-red;
+    z-index: 1;
+  }
+
+  &__image-text {
+    margin: 0 0 0 30px;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: colors.$txt-black;
+    z-index: 1;
+  }
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // height: 566px;
+    border-radius: 10px 0 0 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &_umbrella {
+      height: 530px;
+      background-image: url(../../images/common/transform/lite-way.jpg);
+      background-position: 63% 80%;
+      background-size: fill;
+      background-size: 90%;
+    }
+
+    &_book {
+      height: 550px;
+      background-image: url(../../images/common/transform/ohlala.jpg);
+      background-size: fill;
+      background-position: top right;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .transform {
+    margin: 0 0 110px;
+    max-width: 1200px;
+    padding: 60px 0 51px;
+
+    &__content {
+      max-width: 996px;
+    }
+
+    &__title {
+      margin: 0 0 60px;
+      font-size: 36px;
+    }
+
+    &__list {
+      margin: 0 0 50px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      margin: 0 20px 0 0;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    &__list-title {
+      height: 55px;
+      margin: 0 0 21px;
+    }
+
+    &__item-number {
+      width: 55px;
+      height: 55px;
+    }
+
+    &__description {
+      margin: 0 0 40px;
+    }
+
+    &__image-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__image-item {
+      max-width: 468px;
+      margin: 0 20px 0 0;
+    }
+
+    &__image {
+      border-radius: 10px;
+      height: 638px;
+
+      &_umbrella {
+        background-position: center;
+        background-size: 75%;
+      }
+
+      &_book {
+        background-size: contain;
+      }
+    }
+  }
+}

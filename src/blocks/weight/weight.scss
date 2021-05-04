@@ -1,0 +1,13 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+@use '../choise/choise.scss';
+
+.weight {
+  margin: 0 0 80px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

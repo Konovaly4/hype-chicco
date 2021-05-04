@@ -5,6 +5,8 @@
 @use './questions/questions.scss';
 @use './two-pic-advise/two-pic-advise.scss';
 @use './one-pic-advise/one-pic-advise.scss';
+@use './transform/transform.scss';
+@use './weight/weight.scss';
 
 .root {
   display: flex;
