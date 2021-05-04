@@ -123,6 +123,23 @@
       color: colors.$txt-brick-red;
     }
   }
+
+  &__button {
+    width: 95%;
+    max-width: 394px;
+    height: 65px;
+    border-radius: 50px;
+    border: 1px solid colors.$txt-brick-red;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: colors.$txt-brick-red;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 340%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -158,6 +175,13 @@
         margin: 0 0 0 30px;
         font-size: 28px;
       }
+    }
+
+    &__button {
+      max-width: 420px;
+      height: 100px;
+      font-size: 24px;
+      line-height: 400%;
     }
   }
 }
