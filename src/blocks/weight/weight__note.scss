@@ -1,0 +1,39 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+
+.weight__note {
+  width: 100%;
+  margin: 0 0 70px;
+  padding: 32px 0 42px;
+  background-color: colors.$bg-white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 140%;
+    color: colors.$txt-black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weight__note {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 0 100px;
+    padding: 60px 0;
+
+    &-content {
+      max-width: 996px;
+      font-size: 36px;
+    }
+  }
+}
