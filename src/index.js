@@ -1,4 +1,5 @@
 import './style.scss';
+import smoothscroll from 'smoothscroll-polyfill';
 
 // import constants
 import {
@@ -45,3 +46,5 @@ const wheelsButtonToggle = new WheelsButtonToggle(
 headerMenuVisibility.setMenuState();
 wheelsButtonToggle.initialButtonState();
 wheelsButtonToggle.setEventListeners();
+
+smoothscroll.polyfill();
