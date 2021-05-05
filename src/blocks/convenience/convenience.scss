@@ -12,7 +12,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  &_choise {
+  &__choise {
     margin: 0 0 50px;
   }
 
@@ -114,6 +114,7 @@
     font-size: 18px;
     line-height: 340%;
     text-align: center;
+    cursor: pointer;
     color: colors.$txt-brick-red;
   }
 }

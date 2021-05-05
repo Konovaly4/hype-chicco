@@ -18,6 +18,12 @@
     text-align: center;
   }
 
+  &-text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &-text {
     margin: 0;
     padding: 0;
