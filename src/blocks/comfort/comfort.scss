@@ -1,7 +1,10 @@
 @use '../constants/colors.scss';
 @use '../constants/fonts.scss';
 @use '../choise/choise.scss';
-@use './comfort__wheels.scss';
+@use './comfort__wheels-container_mobile.scss';
+@use './comfort__wheels-container_desktop.scss';
+@use '../article/article.scss';
+@use '../tip/tip.scss';
 
 .comfort {
   margin: 0 0 80px;
@@ -11,4 +14,80 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  &__wheels {
+    width: 100%;
+    margin: 0 0 80px;
+    padding: 40px 0 20px;
+    background-color: colors.$bg-white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-title {
+      width: 95%;
+      margin: 0 0 30px;
+      font-family: fonts.$base-font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 140%;
+      color: colors.$txt-black;
+    }
+
+    &-description {
+      width: 95%;
+      margin: 0 0 50px;
+      font-family: fonts.$base-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: colors.$txt-black;
+    }
+  }
+
+  &__article {
+    margin: 0 0 60px;
+  }
+
+  &__tip {
+    margin: 0 0 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comfort {
+    max-width: 1200px;
+
+    &__wheels {
+      border-radius: 40px;
+      padding: 60px 0;
+
+      &-title {
+        max-width: 996px;
+        font-size: 36px;
+      }
+
+      &-description {
+        max-width: 996px;
+      }
+    }
+
+    &__article {
+      max-width: 996px;
+
+      &-title {
+        font-size: 36px;
+        line-height: 140%;
+        margin: 0 0 30px;
+      }
+    }
+
+    &__tip {
+      margin: 0 0 100px;
+    }
+  }
 }

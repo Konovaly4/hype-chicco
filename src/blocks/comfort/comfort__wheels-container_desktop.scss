@@ -1,0 +1,122 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+
+.comfort__wheels-container_desktop {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wheels {
+  &__title-container_desktop {
+    width: 95%;
+    max-width: 996px;
+    height: 60px;
+    margin: 0 0 20px;
+    padding: 0;
+    background-color: colors.$bg-button-active-blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title-item_desktop {
+    width: 100%;
+    max-width: 332px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title_desktop {
+    margin: 0;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: colors.$txt-black;
+
+    &_first {
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__description-container_desktop {
+    width: 95%;
+    max-width: 996px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__type_desktop {
+    width: 100%;
+    max-width: 332px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__icon_desktop {
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__type-description {
+    margin: 0;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: colors.$txt-black;
+  }
+
+  &__value_desktop {
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+    max-width: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__value-item_desktop {
+    margin: 0 5px 20px 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: colors.$txt-black;
+
+    &:last-of-type {
+      margin: 0 5px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comfort__wheels-container_desktop {
+    display: none;
+  }
+}

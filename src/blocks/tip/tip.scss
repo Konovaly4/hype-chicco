@@ -1,0 +1,96 @@
+@use '../constants/colors.scss';
+@use '../constants/fonts.scss';
+
+.tip {
+  width: 100%;
+  margin: 0;
+  padding: 60px 0;
+  background-color: colors.$bg-white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: colors.$txt-black;
+
+    &_span {
+      color: colors.$txt-blue;
+    }
+  }
+
+  &-note {
+    width: 95%;
+    margin: 66px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-pic {
+    width: 113px;
+    height: 107px;
+    border-radius: 30px;
+    margin: 0 22px 0 0;
+    padding: 0;
+  }
+
+  &-link {
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: colors.$txt-brick-red;
+  }
+
+  &-description {
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: colors.$txt-black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tip {
+    max-width: 1200px;
+    border-radius: 40px;
+
+    &-text {
+      max-width: 996px;
+      font-size: 36px;
+    }
+
+    &-note {
+      max-width: 996px;
+      margin: 40px 0 0;
+    }
+
+    &-pic {
+      width: 132px;
+      height: 125px;
+      margin: 0 30px 0 0;
+    }
+
+    &-link {
+      font-size: 20px;
+    }
+
+    &-description {
+      font-size: 20px;
+      max-width: 506px;
+    }
+  }
+}

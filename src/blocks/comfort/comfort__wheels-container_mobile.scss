@@ -2,38 +2,6 @@
 @use '../constants/fonts.scss';
 
 .comfort__wheels {
-  width: 100%;
-  margin: 0 0 80px;
-  padding: 40px 0 20px;
-  background-color: colors.$bg-white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  &-title {
-    width: 95%;
-    margin: 0 0 30px;
-    font-family: fonts.$base-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 140%;
-    color: colors.$txt-black;
-  }
-
-  &-description {
-    width: 95%;
-    margin: 0 0 50px;
-    font-family: fonts.$base-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 150%;
-    color: colors.$txt-black;
-  }
-
   &-container_mobile {
     width: 95%;
     display: flex;
@@ -68,6 +36,7 @@
     margin: 0 20px 0 0;
     border: 1px solid colors.$border-gray;
     border-radius: 10px;
+    cursor: pointer;
 
     &_active {
       background-color: colors.$bg-button-active-blue;
@@ -109,8 +78,22 @@
   }
 
   &-value_mobile {
-    width: 105px;
+    width: 115px;
     margin: 0 30px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: colors.$txt-black;
+  }
+
+  &-value-text_mobile {
+    margin: 0;
     padding: 0;
     font-family: fonts.$base-font;
     font-style: normal;
@@ -123,5 +106,36 @@
   &-value-list_mobile {
     margin: 0;
     padding: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &-value-item_mobile {
+    width: 100%;
+    min-height: 54px;
+    list-style-type: none;
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: fonts.$base-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: colors.$txt-black;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comfort__wheels {
+    &-container_mobile {
+      display: none;
+    }
   }
 }

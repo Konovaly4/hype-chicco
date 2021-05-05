@@ -384,7 +384,7 @@
         <h2 class="comfort__wheels-subtitle_mobile">Вид коляски</h2>
         <div class="comfort__wheels-buttons_mobile">
           <div class="comfort__wheels-button_mobile comfort__wheels-button_mobile_active">
-            <p class="comfort__wheels-button-text_mobile">Четырехколесные</p>
+            <p class="comfort__wheels-button-text_mobile">Четырех<wbr>колесные</p>
           </div>
           <div class="comfort__wheels-button_mobile">
             <p class="comfort__wheels-button-text_mobile">Трехколесные</p>
@@ -409,48 +409,89 @@
           </li>
         </ul>
       </div>
+      <div class="comfort__wheels-container_desktop">
+        <ul class="wheels__title-container_desktop">
+          <li class="wheels__title-item_desktop">
+            <p class="wheels__title_desktop wheels__title_desktop_first">Вид коляски</p>
+          </li>
+          <li class="wheels__title-item_desktop">
+            <p class="wheels__title_desktop">Плюсы</p>
+          </li>
+          <li class="wheels__title-item_desktop">
+            <p class="wheels__title_desktop">Минусы</p>
+          </li>
+        </ul>
+        <div class="wheels__description-container_desktop">
+          <div class="wheels__type_desktop">
+            <img src="<%=require('./images/common/comfort/4-wheels-icon.svg')%>" alt="four-wheels-icon" class="wheels__icon_desktop">
+            <p class="wheels__type-description">Четырех<wbr>колесные</p>
+          </div>
+          <ul class="wheels__value_desktop">
+            <li class="wheels__value-item_desktop">Считаются наиболее устойчивыми</li>
+            <li class="wheels__value-item_desktop">Обеспечивают отличную проходимость даже на плохой дороге</li>
+          </ul>
+          <ul class="wheels__value_desktop">
+            <li class="wheels__value-item_desktop">Внушительный вес</li>
+            <li class="wheels__value-item_desktop">Низкая маневренность</li>
+          </ul>
+        </div>
+        <div class="wheels__description-container_desktop">
+          <div class="wheels__type_desktop">
+            <img src="<%=require('./images/common/comfort/3-wheels-icon.svg')%>" alt="four-wheels-icon" class="wheels__icon_desktop">
+            <p class="wheels__type-description">Трехколесные</p>
+          </div>
+          <ul class="wheels__value_desktop">
+            <li class="wheels__value-item_desktop">Отличная маневренность благодаря поворотному переднему колесу</li>
+            <li class="wheels__value-item_desktop">Более лёгкие и компактные</li>
+            <li class="wheels__value-item_desktop">Можно совмещать прогулку с ребенком и занятия спортом</li>
+          </ul>
+          <ul class="wheels__value_desktop">
+            <li class="wheels__value-item_desktop">Менее устойчивы</li>
+            <li class="wheels__value-item_desktop">Сложно едут по грязи и снегу</li>
+            <li class="wheels__value-item_desktop">Приходится наклонять перед пандусами</li>
+          </ul>
+        </div>
+      </div>
     </section>
-
-
-    <article class="comfort__article">
-      <h2 class="comfort__article-title">Амортизация</h2>
-      <p class="comfort__article-text">
+    <article class="article comfort__article">
+      <h2 class="article-title">Амортизация</h2>
+      <p class="article-text">
         Коляска должна отличаться плавным ходом, чтобы перемена дорожного покрытия, 
         удары и толчки не разбудили малыша. В современных колясках чаще всего 
         используются пластиковые шарниры или пружинные амортизаторы. Ременные встречаются реже, 
         так как со временем могут порваться или растянуться.
       </p>
     </article>
-    <article class="comfort_tip">
-      <p class="comfort_tip-text">
-        Для проверки качества амортизации раскачайте коляску из 
+    <article class="tip comfort__tip">
+      <p class="tip-text">
+        <span class="tip-text_span">Для проверки качества</span> амортизации раскачайте коляску из 
         стороны в сторону и надавите на нее. Если коляска будет скрипеть и сильно пружинить, то такую модель брать не стоит.
       </p>
     </article>
-    <article class="comfort__article">
-      <h2 class="comfort__article-title">Бампер и ремни безопасности</h2>
-      <p class="comfort__article-text">
+    <article class="article comfort__article">
+      <h2 class="article-title">Бампер и ремни безопасности</h2>
+      <p class="article-text">
         Ремни безопасности и бампер помогают удерживать малыша в правильном положении, 
         а также защищают от выпадения. Хорошо, если ремень безопасности будет 
         пятиточечный — он хорошо фиксирует ребенка, но при этом не ограничивает его подвижность. 
       </p>
     </article>
-    <article class="comfort_tip">
-      <p class="comfort_tip-text">
-        Бампер обеспечивает дополнительную безопасность ребенка. 
+    <article class="tip comfort__tip">
+      <p class="tip-text">
+        Бампер обеспечивает дополнительную <span class="tip-text_span">безопасность ребенка.</span> 
         Бамперы бывают разных типов: встроенные и съемные, узкие и широкие, 
         с подставкой или без — все зависит от ваших предпочтений.
       </p>
-      <div class="comfort_tip-note">
-        <img src="<%=require('./images/common/comfort/baby-in-pram.jpg')%>" alt="baby-in-pram" class="comfort_tip-pic">
-        <p class="comfort_tip-description">
-          <a href="" class="comfort_tip-link">Kwik.One</a> c мягкими накладками на ремни для приятных и безопасных прогулок.
+      <div class="tip-note">
+        <img src="<%=require('./images/common/comfort/baby-in-pram.jpg')%>" alt="baby-in-pram" class="tip-pic">
+        <p class="tip-description">
+          <a href="" class="tip-link">Kwik.One</a> c мягкими накладками на ремни для приятных и безопасных прогулок.
         </p>
       </div>
     </article>
-    <article class="comfort__article">
-      <h2 class="comfort__article-title">Регулируемая спинка</h2>
-      <p class="comfort__article-text">
+    <article class="article comfort__article">
+      <h2 class="article-title">Регулируемая спинка</h2>
+      <p class="article-text">
         Для правильного развития позвоночника ребенка, выбирайте коляску с жесткой спинкой. 
         Чтобы малыш комфортно спал на прогулке, коляска должна обладать функцией регулировки спинки. 
         Она должна опускаться одной рукой плавно и бесшумно.
