@@ -40,7 +40,7 @@
     width: 113px;
     height: 107px;
     border-radius: 30px;
-    margin: 0;
+    margin: 0 22px 0 0;
     padding: 0;
 
     &-link {
@@ -63,6 +63,7 @@
   }
 
   &-description {
+    margin: 0;
     font-family: fonts.$base-font;
     font-style: normal;
     font-weight: 500;
