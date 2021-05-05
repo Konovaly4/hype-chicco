@@ -19,21 +19,23 @@
         <nav class="header__nav-menu header__nav-menu_open">
           <ul class="header__nav-links">
             <li class="header__nav-links-item">
-              <a href="" class="header__nav-link">Как выбрать коляску</a>
+              <a href="#choise" class="header__nav-link">Как выбрать коляску</a>
             </li>
             <li class="header__nav-links-item">
-              <a href="" class="header__nav-link">Тест</a>
+              <a href="#" class="header__nav-link">Тест</a>
             </li>
             <li class="header__nav-links-item">
-              <a href="" class="header__nav-link">Чек-лист</a>
+              <a href="#check" class="header__nav-link">Чек-лист</a>
             </li>
           </ul>
         </nav>
-        <picture>
-          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/header/chicco-logo.svg')%>">
-          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/header/chicco-logo.svg')%>">
-          <img src="<%=require('./images/mobile/header/chicco-logo.svg')%>" alt="hype-logo" class="header__chicco-logo">
-        </picture>
+        <a href="https://shop.chicco.ru/" target="_blank" class="chicco-logo-link">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/header/chicco-logo.svg')%>">
+            <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/header/chicco-logo.svg')%>">
+              <img src="<%=require('./images/mobile/header/chicco-logo.svg')%>" alt="hype-logo" class="header__chicco-logo">
+          </picture>
+        </a>
         <div class="header__menu-open header__menu-open_show"></div>
         <div class="header__menu-close header__menu-close_show"></div>
       </div>
@@ -42,7 +44,7 @@
       <div class="main__content">
         <h1 class="main__title">В ритме большого города</h1>
         <p class="main__description">как выбрать удобную и практичную детскую коляску</p>
-        <a href="" class="main__button">Подобрать коляску</a>
+        <a href="https://shop.chicco.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="main__button">Подобрать коляску</a>
       </div>
       <article class="main__article">
         <p class="main__article-text">
@@ -51,22 +53,28 @@
           как правильно выбрать детскую коляску?
         </p>
         <p class="main__article-text">
-          В нашем совместном проекте с итальянским брендом детских товаров <a href="" class="main__article-link">Chicco</a> вы 
+          В нашем совместном проекте с итальянским брендом детских товаров <a href="https://shop.chicco.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="main__article-link">Chicco</a> вы 
           найдете рекомендации о том, как найти детскую коляску, которая будет удобна для ребенка и его родителей.
         </p>
       </article>
       <ul class="main__list">
         <li class="main__list-item">
-          <div class="main__list-marker"></div>
-          <p class="main__list-text">Что нужно учитывать при выборе коляски для ребенка?</p>
+          <a href="#choise" class="main__list-link">
+            <div class="main__list-marker"></div>
+            <p class="main__list-text">Что нужно учитывать при выборе коляски для ребенка?</p>
+          </a>
         </li>
         <li class="main__list-item">
-          <div class="main__list-marker"></div>
-          <p class="main__list-text">Тест: какая детская прогулочная коляска подойдет под ваш образ жизни?</p>
+          <a href="" class="main__list-link">
+            <div class="main__list-marker"></div>
+            <p class="main__list-text">Тест: какая детская прогулочная коляска подойдет под ваш образ жизни?</p>
+          </a>
         </li>
         <li class="main__list-item">
-          <div class="main__list-marker"></div>
-          <p class="main__list-text">Чек-лист по выбору детской коляски</p>
+          <a href="" class="main__list-link">
+            <div class="main__list-marker"></div>
+            <p class="main__list-text">Чек-лист по выбору детской коляски</p>
+          </a>
         </li>
       </ul>
       <picture class="main__city">
@@ -75,7 +83,6 @@
         <img src="<%=require('./images/mobile/main/main-bg.svg')%>" alt="city">
       </picture>
       <img src="<%=require('./images/mom.svg')%>" alt="mom" class="main__mom">
-      <!-- <img src="<%=require('./images/common/main/mom.svg')%>" alt="mom" class="main__mom"> -->
       <picture class="main__pram">
         <source media="(max-width: 1023px)" srcset="<%=require('./images/mobile/main/pram.svg')%>">
         <source media="(min-width: 1024px)" srcset="<%=require('./images/desktop/main/pram.svg')%>">
@@ -85,6 +92,7 @@
       <div class="main__bottom-bg"></div>
     </section>
     <section class="choise choise_model">
+      <a name="choise" class="anchor"></a>
       <img src="<%=require('./images/common/choise/pram-icon.svg')%>" alt="pram-icon" class="choise__icon">
       <div class="choise__text-container">
         <h1 class="choise__title">
@@ -143,7 +151,7 @@
           </ul>
         </div>
       </div>
-      <a href="" class="questions__button">Посмотреть все модели</a>
+      <a href="https://shop.chicco.ru/catalog/kolyaski/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="questions__button">Посмотреть все модели</a>
     </section>
     <section class="advise two-pic-advise">
       <div class="advise__content">
@@ -151,25 +159,29 @@
           Если вы без ума от активного образа жизни и часто путешествуете, то присмотритесь к прогулочной коляске
         </h1>
         <p class="advise__description two-pic-advise__description">
-          Например, прогулочная коляска <a href="" class="advise__inline-link">TrolleyMe</a> быстро складывается и легко трансформируется
-          в тележку, а модель <a href="" class="advise__inline-link">Goody</a> настолько компактная, что вы можете взять
+          Например, прогулочная коляска 
+          <a href="https://www.chicco.ru/produkciya/8058664127719.trolleyme.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__inline-link">TrolleyMe</a> 
+          быстро складывается и легко трансформируется
+          в тележку, а модель 
+          <a href="https://www.chicco.ru/produkciya/8058664127702.goody.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__inline-link">Goody</a> 
+          настолько компактная, что вы можете взять
           её в самолет в качестве ручной клади (на всякий случай проверьте требования авиакомпании).
         </p>
         <div class="advise__picture-container two-pic-advise__picture-container">
           <div class="advise__picture-item two-pic-advise__picture-item">
-            <a href="" class="advise__picture-link">
+            <a href="https://www.chicco.ru/produkciya/8058664127719.trolleyme.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
               <img src="<%=require('./images/common/travel-pram/trolley-me-pic.jpg')%>" alt="trolley-me" class="advise__picture">
             </a>
-            <a href="" class="advise__link">TrolleyMe</a>
+            <a href="https://www.chicco.ru/produkciya/8058664127719.trolleyme.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">TrolleyMe</a>
             <p class="advise__link-description">
               идеальный компаньон для прогулок и путешествий
             </p>
           </div>
           <div class="advise__picture-item two-pic-advise__picture-item">
-            <a href="" class="advise__picture-link">
+            <a href="https://www.chicco.ru/produkciya/8058664127702.goody.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
               <img src="<%=require('./images/common/travel-pram/goody-pic.jpg')%>" alt="" class="advise__picture">
             </a>
-            <a href="" class="advise__link">Goody</a>
+            <a href="https://www.chicco.ru/produkciya/8058664127702.goody.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">Goody</a>
             <p class="advise__link-description">
               складывается автоматически всего одним нажатием кнопки
             </p>
@@ -183,15 +195,17 @@
           Если вы живете за городом и у вас есть машина, то обратите внимание на коляски 2-в-1 и 3-в-1
         </h1>
         <p class="advise__description one-pic-advise__description">
-          Например, модульная система <a href="" class="advise__inline-link">Trio Activ3</a> Top дополнена автокреслом, которое 
+          Например, модульная система 
+          <a href="" class="advise__inline-link">Trio Activ3 Top</a> 
+           дополнена автокреслом, которое 
           можно установить на шасси коляски. Вам не придется ничего приобретать дополнительно.
         </p>
         <div class="advise__picture-container one-pic-advise__picture-container">
           <div class="advise__picture-item one-pic-advise__picture-item">
-            <a href="" class="advise__picture-link">
+            <a href="https://www.chicco.ru/produkciya/8058664122653.trio-activ3.kolyaski.kolyaski-3-v-1.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
               <img src="<%=require('./images/common/suburban-pram/trio-activ3.jpg')%>" alt="trolley-me" class="advise__picture">
             </a>
-            <a href="" class="advise__link">Trio Activ3 Top</a>
+            <a href="https://www.chicco.ru/produkciya/8058664122653.trio-activ3.kolyaski.kolyaski-3-v-1.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">Trio Activ3 Top</a>
             <p class="advise__link-description">
               отличный выбор для спортивных и динамичных родителей
             </p>
@@ -205,15 +219,17 @@
           Если у вас двойня или дети-погодки, то имеет смысл приобрести коляску-тандем
         </h1>
         <p class="advise__description one-pic-advise__description">
-          Например, <a href="" class="advise__inline-link">OHlala Twin</a>. Обе спинки коляски регулируются независимо друг от друга, 
+          Например, 
+          <a href="https://shop.chicco.ru/catalog/progulochnye_kolyaski/kolyaska_ohlala_twin_1/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__inline-link">OHlala Twin</a>
+          . Обе спинки коляски регулируются независимо друг от друга, 
           а благодаря современной системе складывания она занимает мало места.
         </p>
         <div class="advise__picture-container one-pic-advise__picture-container">
           <div class="advise__picture-item one-pic-advise__picture-item">
-            <a href="" class="advise__picture-link">
+            <a href="https://shop.chicco.ru/catalog/progulochnye_kolyaski/kolyaska_ohlala_twin_1/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
               <img src="<%=require('./images/common/twins-pram/OHlala Twin.jpg')%>" alt="trolley-me" class="advise__picture">
             </a>
-            <a href="" class="advise__link">OHlala Twin</a>
+            <a href="https://shop.chicco.ru/catalog/progulochnye_kolyaski/kolyaska_ohlala_twin_1/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">OHlala Twin</a>
             <p class="advise__link-description">
               ультралегкая и компактная коляска-тандем от Chicco
             </p>
@@ -271,14 +287,14 @@
       </p>
       <div class="transform__image-container">
         <div class="transform__image-item">
-          <a href="" class="transform__image-link">Lite Way3 TOP</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="transform__image-link">Lite Way3 TOP</a>
           <p class="transform__image-text">система складывания «зонтик»</p>
-          <a href="" class="transform__image transform__image_umbrella"></a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="transform__image transform__image_umbrella"></a>
         </div>
         <div class="transform__image-item">
-          <a href="" class="transform__image-link">OHlala</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="transform__image-link">OHlala</a>
           <p class="transform__image-text">система складывания «книжка»</p>
-          <a href="" class="transform__image transform__image_book"></a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="transform__image transform__image_book"></a>
         </div>
       </div>
     </div>
@@ -308,9 +324,11 @@
     </h2>
     <ul class="weight__list">
       <li class="weight__item">
-        <img src="<%=require('./images/common/weight/ohlala2.jpg')%>" alt="ohlala-2" class="weight__item-pic">
+        <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
+          <img src="<%=require('./images/common/weight/ohlala2.jpg')%>" alt="ohlala-2" class="weight__item-pic">
+        </a>
         <div class="weight__item-footer">
-          <a href="" class="weight__item-link">OHlalà 2</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">OHlalà 2</a>
           <div class="weight__item-footer-params">
             <img src="<%=require('./images/common/weight/weight.svg')%>" alt="weight-icon" class="weight__item-footer-weight">
             <div class="weight__item-footer-measure">
@@ -321,9 +339,11 @@
         </div>
       </li>
       <li class="weight__item">
-        <img src="<%=require('./images/common/weight/lite-way-3.jpg')%>" alt="lite-way-3" class="weight__item-pic">
+        <a href=https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech"" target="_blank" class="weight__item-pic-link">
+          <img src="<%=require('./images/common/weight/lite-way-3.jpg')%>" alt="lite-way-3" class="weight__item-pic">
+        </a>
         <div class="weight__item-footer">
-          <a href="" class="weight__item-link">Lite Way3 TOP</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">Lite Way3 TOP</a>
           <div class="weight__item-footer-params">
             <img src="<%=require('./images/common/weight/weight.svg')%>" alt="weight-icon" class="weight__item-footer-weight">
             <div class="weight__item-footer-measure">
@@ -334,9 +354,11 @@
         </div>
       </li>
       <li class="weight__item">
-        <img src="<%=require('./images/common/weight/simply-city.jpg')%>" alt="simply-city" class="weight__item-pic">
+        <a href="https://shop.chicco.ru/catalog/search/?value=simplicity&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
+          <img src="<%=require('./images/common/weight/simply-city.jpg')%>" alt="simply-city" class="weight__item-pic">
+        </a>
         <div class="weight__item-footer">
-          <a href="" class="weight__item-link">SimplySity</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=simplicity&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">SimplySity</a>
           <div class="weight__item-footer-params">
             <img src="<%=require('./images/common/weight/weight.svg')%>" alt="weight-icon" class="weight__item-footer-weight">
             <div class="weight__item-footer-measure">
@@ -347,9 +369,11 @@
         </div>
       </li>
       <li class="weight__item">
-        <img src="<%=require('./images/common/weight/minimo-3.jpg')%>" alt="minimo-3" class="weight__item-pic">
+        <a href="https://shop.chicco.ru/catalog/search/?value=miinimo&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
+          <img src="<%=require('./images/common/weight/minimo-3.jpg')%>" alt="minimo-3" class="weight__item-pic">
+        </a>
         <div class="weight__item-footer">
-          <a href="" class="weight__item-link">Minimo 3</a>
+          <a href="https://shop.chicco.ru/catalog/search/?value=miinimo&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">Minimo 3</a>
           <div class="weight__item-footer-params">
             <img src="<%=require('./images/common/weight/weight.svg')%>" alt="weight-icon" class="weight__item-footer-weight">
             <div class="weight__item-footer-measure">
@@ -360,7 +384,7 @@
         </div>
       </li>
     </ul>
-    <a href="" class="weight__button">Посмотреть все модели</a>
+    <a href="https://shop.chicco.ru/catalog/kolyaski/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__button">Посмотреть все модели</a>
   </section>
   <section class="comfort">
     <article class="choise choise_comfort">
@@ -483,9 +507,11 @@
         с подставкой или без — все зависит от ваших предпочтений.
       </p>
       <div class="tip-note">
-        <img src="<%=require('./images/common/comfort/baby-in-pram.jpg')%>" alt="baby-in-pram" class="tip-pic">
+        <a href="https://www.chicco.ru/produkciya/8058664092451.kolyaska-kwik-one.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="tip__pic-link">
+          <img src="<%=require('./images/common/comfort/baby-in-pram.jpg')%>" alt="baby-in-pram" class="tip-pic">
+        </a>
         <p class="tip-description">
-          <a href="" class="tip-link">Kwik.One</a> c мягкими накладками на ремни для приятных и безопасных прогулок.
+          <a href="https://www.chicco.ru/produkciya/8058664092451.kolyaska-kwik-one.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="tip-link">Kwik.One</a> c мягкими накладками на ремни для приятных и безопасных прогулок.
         </p>
       </div>
     </article>
@@ -521,47 +547,66 @@
     </article>
     <div class="convenience__desigion">
       <div class="convenience__desigion-description">
-        <a href="" class="convenience__desigion-link">Fully</a>
+        <a href="https://shop.chicco.ru/catalog/search/?value=fully&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-link">Fully</a>
         <ul class="convenience__desigion-list">
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">1</p>
-            <p class="item-text convenience__desigion-item-text">Люлька и прогулочная коляска два в одном.</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Люлька и прогулочная коляска два в одном.</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">2</p>
-            <p class="item-text convenience__desigion-item-text">Дождевик и широкий капюшон для максимальной защиты ребенка</p>
+
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Дождевик и широкий капюшон для максимальной защиты ребенка</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">3</p>
-            <p class="item-text convenience__desigion-item-text">Теплый фартук и накидка на ножки для комфортной прогулки</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Теплый фартук и накидка на ножки для комфортной прогулки</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">4</p>
-            <p class="item-text convenience__desigion-item-text">Сетчатый карман для хранения мелких предметов, тканевое кольцо для пустышки</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Сетчатый карман для хранения мелких предметов, тканевое кольцо для пустышки</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">5</p>
-            <p class="item-text convenience__desigion-item-text">Ручка из эко-кожи регулируется в четырех положениях по высоте</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Ручка из эко-кожи регулируется в четырех положениях по высоте</p>
+            </div>
           </li>
         </ul>
       </div>
-      <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+      <a href="https://shop.chicco.ru/catalog/search/?value=fully&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
+        <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+      </a>
     </div>
     <div class="convenience__desigion">
       <div class="convenience__desigion-description">
-        <a href="" class="convenience__desigion-link">Multiride</a>
+        <a href="https://shop.chicco.ru/catalog/search/?value=multiride&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-link">Multiride</a>
         <ul class="convenience__desigion-list">
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">1</p>
-            <p class="item-text convenience__desigion-item-text">Колеса для бездорожья.</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Колеса для бездорожья.</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">2</p>
-            <p class="item-text convenience__desigion-item-text">Большой капюшон для максимальной защиты ребенка</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Большой капюшон для максимальной защиты ребенка</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">3</p>
-            <p class="item-text convenience__desigion-item-text">Дождевик и накидка на ножки для комфорта во время прогулок</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Дождевик и накидка на ножки для комфорта во время прогулок</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">4</p>
@@ -569,27 +614,36 @@
           </li>
         </ul>
       </div>
-      <img src="<%=require('./images/common/convenience/multiride-pram.jpg')%>" alt="multiride-pram" class="convenience__desigion-pram">
+      <a href="https://shop.chicco.ru/catalog/search/?value=multiride&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
+        <img src="<%=require('./images/common/convenience/multiride-pram.jpg')%>" alt="multiride-pram" class="convenience__desigion-pram">       
+      </a>
     </div>
     <div class="convenience__desigion">
       <div class="convenience__desigion-description">
-        <a href="" class="convenience__desigion-link">ОHLala2</a>
+        <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-link">ОHLala2</a>
         <ul class="convenience__desigion-list">
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">1</p>
-            <p class="item-text convenience__desigion-item-text">Дождевик в комплекте для прогулок в непогоду</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Дождевик в комплекте для прогулок в непогоду</p>
+            </div>
           </li>
           <li class="convenience__desigion-item">
             <p class="item-number convenience__desigion-item-number">2</p>
-            <p class="item-text convenience__desigion-item-text">Вместительная корзина для покупок</p>
+            <div class="item-text-wrapper convenience__desigion-item-text-wrapper">
+              <p class="item-text convenience__desigion-item-text">Вместительная корзина для покупок</p>
+            </div>
           </li>
         </ul>
       </div>
-      <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+      <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
+        <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+      </a>
     </div>
-    <div class="convenience__button">Посмотреть все модели</div>
+    <a href="https://shop.chicco.ru/catalog/kolyaski/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__button">Посмотреть все модели</a>
   </section>
   <section class="check">
+    <a name="check" class="anchor"></a>
     <article class="choise check__choise">
       <img src="<%=require('./images/common/check/check-icon.svg')%>" alt="convenience-icon" class="choise__icon">
       <div class="choise__text-container">

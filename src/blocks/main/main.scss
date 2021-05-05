@@ -118,6 +118,15 @@
       }
     }
 
+    &-link {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
     &-marker {
       width: 12px;
       height: 18px;
