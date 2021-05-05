@@ -54,6 +54,16 @@
     &:last-of-type {
       margin: 0;
     }
+
+    &-number {
+      width: 54px;
+      min-width: 54px;
+      height: 54px;
+      min-height: 54px;
+      line-height: 55px;
+      margin: 0 19px 0 0;
+      padding: 0;
+    }
   }
 
   &__list-title {
