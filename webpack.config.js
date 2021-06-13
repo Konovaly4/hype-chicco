@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   target: "web",
@@ -58,13 +59,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: false,
       template: './src/index.html',
       filename: 'index.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
-  }),
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './src/images/favicon/logo.svg',
+      mode: 'webapp',
+      devMode: 'webapp',
+      inject: true,
+    }),
   ]
 }
