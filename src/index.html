@@ -91,9 +91,6 @@
       </picture>
       <div class="main__list-bg"></div>
       <div class="main__bottom-bg"></div>
-      <svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-			</svg>
     </section>
     <section class="choise choise_model">
       <a name="choise" class="anchor"></a>
@@ -174,7 +171,11 @@
         <div class="advise__picture-container two-pic-advise__picture-container">
           <div class="advise__picture-item two-pic-advise__picture-item">
             <a href="https://www.chicco.ru/produkciya/8058664127719.trolleyme.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
-              <img src="<%=require('./images/common/travel-pram/trolley-me-pic.jpg')%>" alt="trolley-me" class="advise__picture">
+              <picture>
+                <source media="(max-width: 910px)" srcset="<%=require('./images/mobile/travel-pram/trolley-me-pic.jpg')%>">
+                <source media="(min-width: 911px)" srcset="<%=require('./images/desktop/travel-pram/trolley-me-pic.jpg')%>">
+                <img class="advise__picture" src="<%=require('./images/mobile/travel-pram/trolley-me-pic.jpg')%>" alt="trolley-me">
+              </picture>
             </a>
             <a href="https://www.chicco.ru/produkciya/8058664127719.trolleyme.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">TrolleyMe</a>
             <p class="advise__link-description">
@@ -183,7 +184,11 @@
           </div>
           <div class="advise__picture-item two-pic-advise__picture-item">
             <a href="https://www.chicco.ru/produkciya/8058664127702.goody.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
-              <img src="<%=require('./images/common/travel-pram/goody-pic.jpg')%>" alt="" class="advise__picture">
+              <picture>
+                <source media="(max-width: 910px)" srcset="<%=require('./images/mobile/travel-pram/goody-pic.jpg')%>">
+                <source media="(min-width: 911px)" srcset="<%=require('./images/desktop/travel-pram/goody-pic.jpg')%>">
+                <img class="advise__picture" src="<%=require('./images/mobile/travel-pram/goody-pic.jpg')%>" alt="trolley-me">
+              </picture>
             </a>
             <a href="https://www.chicco.ru/produkciya/8058664127702.goody.kolyaski.progulochnye-kolyaski.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">Goody</a>
             <p class="advise__link-description">
@@ -207,7 +212,11 @@
         <div class="advise__picture-container one-pic-advise__picture-container">
           <div class="advise__picture-item one-pic-advise__picture-item">
             <a href="https://www.chicco.ru/produkciya/8058664122653.trio-activ3.kolyaski.kolyaski-3-v-1.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
-              <img src="<%=require('./images/common/suburban-pram/trio-activ3.jpg')%>" alt="trolley-me" class="advise__picture">
+              <picture>
+                <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/suburban-pram/trio-activ3.jpg')%>">
+                <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/suburban-pram/trio-activ3.jpg')%>">
+                <img class="advise__picture" src="<%=require('./images/mobile/suburban-pram/trio-activ3.jpg')%>" alt="trio-activ3">
+              </picture>
             </a>
             <a href="https://www.chicco.ru/produkciya/8058664122653.trio-activ3.kolyaski.kolyaski-3-v-1.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">Trio Activ3 Top</a>
             <p class="advise__link-description">
@@ -231,7 +240,11 @@
         <div class="advise__picture-container one-pic-advise__picture-container">
           <div class="advise__picture-item one-pic-advise__picture-item">
             <a href="https://shop.chicco.ru/catalog/progulochnye_kolyaski/kolyaska_ohlala_twin_1/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__picture-link">
-              <img src="<%=require('./images/common/twins-pram/OHlala Twin.jpg')%>" alt="trolley-me" class="advise__picture">
+              <picture>
+                <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/twins-pram/OHlala Twin.jpg')%>">
+                <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/twins-pram/OHlala Twin.jpg')%>">
+                <img class="advise__picture" src="<%=require('./images/mobile/twins-pram/OHlala Twin.jpg')%>" alt="trio-activ3">
+              </picture>
             </a>
             <a href="https://shop.chicco.ru/catalog/progulochnye_kolyaski/kolyaska_ohlala_twin_1/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="advise__link">OHlala Twin</a>
             <p class="advise__link-description">
@@ -329,7 +342,11 @@
     <ul class="weight__list">
       <li class="weight__item">
         <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
-          <img src="<%=require('./images/common/weight/ohlala2.jpg')%>" alt="ohlala-2" class="weight__item-pic">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/weight/ohlala2.jpg')%>">
+            <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/weight/ohlala2.jpg')%>">
+            <img class="weight__item-pic" src="<%=require('./images/mobile/weight/ohlala2.jpg')%>" alt="ohlala2.jpg">
+          </picture>
         </a>
         <div class="weight__item-footer">
           <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">OHlalà 2</a>
@@ -344,7 +361,11 @@
       </li>
       <li class="weight__item">
         <a href="https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
-          <img src="<%=require('./images/common/weight/lite-way-3.jpg')%>" alt="lite-way-3" class="weight__item-pic">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/weight/lite-way-3.jpg')%>">
+            <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/weight/lite-way-3.jpg')%>">
+            <img class="weight__item-pic" src="<%=require('./images/mobile/weight/lite-way-3.jpg')%>" alt="lite-way-3">
+          </picture>
         </a>
         <div class="weight__item-footer">
           <a href="https://shop.chicco.ru/catalog/search/?value=lite%20way&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">Lite Way3 TOP</a>
@@ -359,7 +380,11 @@
       </li>
       <li class="weight__item">
         <a href="https://shop.chicco.ru/catalog/search/?value=simplicity&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
-          <img src="<%=require('./images/common/weight/simply-city.jpg')%>" alt="simply-city" class="weight__item-pic">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/weight/simply-city.jpg')%>">
+            <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/weight/simply-city.jpg')%>">
+            <img class="weight__item-pic" src="<%=require('./images/mobile/weight/simply-city.jpg')%>" alt="simply-city">
+          </picture>
         </a>
         <div class="weight__item-footer">
           <a href="https://shop.chicco.ru/catalog/search/?value=simplicity&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">SimplySity</a>
@@ -374,7 +399,11 @@
       </li>
       <li class="weight__item">
         <a href="https://shop.chicco.ru/catalog/search/?value=miinimo&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-pic-link">
-          <img src="<%=require('./images/common/weight/minimo-3.jpg')%>" alt="minimo-3" class="weight__item-pic">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/weight/minimo-3.jpg')%>">
+            <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/weight/minimo-3.jpg')%>">
+            <img class="weight__item-pic" src="<%=require('./images/mobile/weight/minimo-3.jpg')%>" alt="minimo-3">
+          </picture>
         </a>
         <div class="weight__item-footer">
           <a href="https://shop.chicco.ru/catalog/search/?value=miinimo&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="weight__item-link">Minimo 3</a>
@@ -587,7 +616,11 @@
         </ul>
       </div>
       <a href="https://shop.chicco.ru/catalog/search/?value=fully&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
-        <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+        <picture>
+          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/convenience/fully-pram.jpg')%>">
+          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/convenience/fully-pram.jpg')%>">
+          <img class="convenience__desigion-pram" src="<%=require('./images/mobile/convenience/fully-pram.jpg')%>" alt="fully-pram">
+        </picture>
       </a>
     </div>
     <div class="convenience__desigion">
@@ -619,7 +652,11 @@
         </ul>
       </div>
       <a href="https://shop.chicco.ru/catalog/search/?value=multiride&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
-        <img src="<%=require('./images/common/convenience/multiride-pram.jpg')%>" alt="multiride-pram" class="convenience__desigion-pram">       
+        <picture>
+          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/convenience/multiride-pram.jpg')%>">
+          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/convenience/multiride-pram.jpg')%>">
+          <img class="convenience__desigion-pram" src="<%=require('./images/mobile/convenience/multiride-pram.jpg')%>" alt="multiride-pram">
+        </picture>
       </a>
     </div>
     <div class="convenience__desigion">
@@ -641,7 +678,11 @@
         </ul>
       </div>
       <a href="https://shop.chicco.ru/catalog/search/?value=ohlala&catalogtype=search?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__desigion-pram-link">
-        <img src="<%=require('./images/common/convenience/fully-pram.jpg')%>" alt="fully-pram" class="convenience__desigion-pram">
+        <picture>
+          <source media="(max-width: 767px)" srcset="<%=require('./images/mobile/convenience/ОHLala2.jpg')%>">
+          <source media="(min-width: 768px)" srcset="<%=require('./images/desktop/convenience/ОHLala2.jpg')%>">
+          <img class="convenience__desigion-pram" src="<%=require('./images/mobile/convenience/ОHLala2.jpg')%>" alt="ОHLala2">
+        </picture>
       </a>
     </div>
     <a href="https://shop.chicco.ru/catalog/kolyaski/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" target="_blank" class="convenience__button">Посмотреть все модели</a>
