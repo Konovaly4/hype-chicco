@@ -1,5 +1,6 @@
 import './style.scss';
 import smoothscroll from 'smoothscroll-polyfill';
+import LazyLoad from 'vanilla-lazyload';
 
 // import constants
 import {
@@ -48,3 +49,9 @@ wheelsButtonToggle.initialButtonState();
 wheelsButtonToggle.setEventListeners();
 
 smoothscroll.polyfill();
+
+const lazyLoadInstance = new LazyLoad({
+  threshold: 200,
+});
+
+lazyLoadInstance.update();

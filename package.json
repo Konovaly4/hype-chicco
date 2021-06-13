@@ -83,6 +83,7 @@
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.9.1",
     "smoothscroll-polyfill": "^0.4.4",
-    "tiny-slider": "^2.9.3"
+    "tiny-slider": "^2.9.3",
+    "vanilla-lazyload": "^17.4.0"
   }
 }
